@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <title>Postal Rate</title>
+</head>
+<body>
+   <div class="container container-fluid bg1 mt-5">
+      <div class="row justify-content-md-center">
+         <div class="col-md-6 my-4">
+            <h1>Postal Rate</h1>
+            <hr>
+            <p>
+               Your package of weight <%= weight %> oz. and mail type <%= mailType %> is: 
+               <br><br>
+               <span class="font-weight-bold">$<%= rate %></span>
+            </p>
+            <button class="btn btn-dark btn-lg"><a href="/">Get a New Rate</a></button>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

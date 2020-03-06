@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <title>Week 9: Assignment</title>
+</head>
+<body>
+   <div class="container container-fluid bg1 mt-5">
+      <div class="row justify-content-md-center">
+         <div class="col-md-6 mt-4">
+            <h1>Postal Rate Calculator</h1>
+            <hr>
+            <div class="form-group">
+               <form action="/calculate" method="GET">
+                  <label for="weight">Weight (oz.):</label>
+                  <input type="text" class="form-control" name="weight" id="weight">
+                  <br><br>
+                  <label for="mailType">Type:</label>
+                  <select name="mailType" class="form-control">
+                     <option>Letters (Stamped)</option>
+                     <option>Letters (Metered)</option>
+                     <option>Large Envelopes (Flats)</option>
+                     <option>First-Class Package Service - Retail</option>
+                  </select>
+
+                  <br><br>
+
+                  <input type="submit" value="Get Rate" class="btn btn-dark btn-lg">
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
